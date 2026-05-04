@@ -1,166 +1,38 @@
-version: '0.1'
-status: draft (auto-extracted, awaiting curation)
-source: figma rd4-C
-method: solid fills aggregation
-guideline_top:
-- hex: '#025153'
-  count: 19156
-- hex: '#FFFFFF'
-  count: 1557
-- hex: '#00F9FF0D'
-  count: 824
-- hex: '#000000'
-  count: 445
-- hex: '#00F9FF'
-  count: 260
-- hex: '#FFFFFF33'
-  count: 136
-- hex: '#00F9FF1A'
-  count: 135
-- hex: '#00F9FF33'
-  count: 116
-- hex: '#D9D9D9'
-  count: 115
-- hex: '#222222'
-  count: 83
-- hex: '#FFFFFF99'
-  count: 77
-- hex: '#B5B4B5'
-  count: 67
-- hex: '#31312F'
-  count: 36
-- hex: '#FFFFFFCC'
-  count: 24
-- hex: '#E16767'
-  count: 20
-- hex: '#F7FF08'
-  count: 18
-- hex: '#FFFFFF1A'
-  count: 16
-- hex: '#00F9FF4D'
-  count: 15
-- hex: '#36E4FC4D'
-  count: 13
-- hex: '#FFFFFF66'
-  count: 10
-- hex: '#C2C1C5'
-  count: 10
-- hex: '#DED7D7'
-  count: 6
-- hex: '#FFFFFA'
-  count: 6
-- hex: '#D35454'
-  count: 6
-- hex: '#E75151'
-  count: 6
-- hex: '#F9FF08'
-  count: 5
-- hex: '#B2564D'
-  count: 4
-- hex: '#3896ED'
-  count: 4
-- hex: '#444444'
-  count: 3
-- hex: '#D9D9D999'
-  count: 3
-- hex: '#FFF1F0'
-  count: 3
-- hex: '#606060'
-  count: 3
-- hex: '#0BE1F4'
-  count: 2
-- hex: '#FFFFFF80'
-  count: 2
-- hex: '#00000033'
-  count: 1
-- hex: '#00000099'
-  count: 1
-- hex: '#1DEEEB'
-  count: 1
-- hex: '#14D8FF'
-  count: 1
-- hex: '#29A6FE'
-  count: 1
-- hex: '#4D73F3'
-  count: 1
-whole_file_top:
-- hex: '#025153'
-  count: 38312
-- hex: '#FFFFFF'
-  count: 21329
-- hex: '#000000'
-  count: 17186
-- hex: '#D9D9D9'
-  count: 12281
-- hex: '#569191'
-  count: 6496
-- hex: '#C4AD4B'
-  count: 5739
-- hex: '#9B9291'
-  count: 3719
-- hex: '#5B3C1D'
-  count: 3365
-- hex: '#00F9FF0D'
-  count: 3085
-- hex: '#543F25'
-  count: 3024
-- hex: '#3D434F'
-  count: 2572
-- hex: '#191818'
-  count: 2486
-- hex: '#141414'
-  count: 2290
-- hex: '#6B727B'
-  count: 2080
-- hex: '#595959'
-  count: 2026
-- hex: '#848B96'
-  count: 1728
-- hex: '#EA8634'
-  count: 1700
-- hex: '#685137'
-  count: 1537
-- hex: '#59544B'
-  count: 1440
-- hex: '#A07918'
-  count: 1433
-- hex: '#7F7D79'
-  count: 1361
-- hex: '#87CCC0'
-  count: 1235
-- hex: '#299B95'
-  count: 1226
-- hex: '#DDD1BA'
-  count: 1205
-- hex: '#F879DC'
-  count: 1174
-- hex: '#FCFBFA'
-  count: 1147
-- hex: '#222222'
-  count: 1104
-- hex: '#4F4E4C'
-  count: 1099
-- hex: '#3E605F'
-  count: 1088
-- hex: '#3F3A2F'
-  count: 1075
-- hex: '#4C5468'
-  count: 1060
-- hex: '#A5943F'
-  count: 1044
-- hex: '#EFBF6A'
-  count: 987
-- hex: '#4D5359'
-  count: 860
-- hex: '#605E5C'
-  count: 840
-- hex: '#2D2D2D'
-  count: 839
-- hex: '#876415'
-  count: 835
-- hex: '#774A2B'
-  count: 830
-- hex: '#CCA536'
-  count: 806
-- hex: '#66645F'
-  count: 755
+version: 0.2
+status: extracted from Figma 'Цветовая палитра' (node 1098:1876)
+source: figma rd4-C, page guideline (1:6)
+
+# У Radugadesign нет одного фирменного цвета.
+# Есть палитра-инструмент: 13 hue-колонок × 6 tone-рядов = 78 цветов.
+# Применяется в 3D-графике, иллюстрациях, мерче — везде, где нужен цвет.
+
+structure:
+  hue_columns: 13
+  tone_rows: 6
+  total: 78
+
+# tones[0] — самые светлые/насыщенные («brand bright»)
+# tones[5] — самые тёмные («charcoal»)
+tone_names: [bright, vivid, deep, rich, dark, charcoal]
+
+# 13 hue-колонок, идут слева направо как в Figma-сетке.
+# Каждая колонка — список из 6 тонов: bright → charcoal.
+hues:
+  cyan:    ["#1DEEEB", "#1AD4D1", "#17B9B7", "#139F9D", "#0D6A68", "#0A4F4E"]
+  sky:     ["#14D8FF", "#12C0E3", "#10A8C6", "#0D90AA", "#096071", "#074855"]
+  blue:    ["#29A6FE", "#2494E2", "#2081C6", "#1B6FA9", "#124A71", "#0E3755"]
+  indigo:  ["#4D73F3", "#4466D8", "#3C59BD", "#334DA2", "#22336C", "#1A2651"]
+  purple:  ["#9756E5", "#864CCC", "#7543B2", "#653999", "#432666", "#321D4C"]
+  magenta: ["#DA5BBE", "#C251A9", "#AA4794", "#913D7F", "#612854", "#491E3F"]
+  pink:    ["#EF64A7", "#D45994", "#BA4E82", "#9F436F", "#6A2C4A", "#502138"]
+  red:     ["#FE4D70", "#E24464", "#C63C57", "#A9334B", "#712232", "#551A25"]
+  coral:   ["#FF6259", "#E3574F", "#C64C45", "#AA413B", "#712C28", "#55211E"]
+  orange:  ["#FF8C26", "#E37C22", "#C66D1E", "#AA5D19", "#713E11", "#552F0D"]
+  yellow:  ["#FFD900", "#E3C100", "#C6A900", "#AA9100", "#716000", "#554800"]
+  lime:    ["#B0C63A", "#9CB034", "#899A2D", "#758427", "#4E581A", "#3B4213"]
+  green:   ["#84BD5D", "#75A853", "#679348", "#587E3E", "#3B5429", "#2C3F1F"]
+
+# Базовые ink/paper для типографики и поверхностей вне палитры
+neutrals:
+  ink: "#000000"
+  paper: "#FFFFFF"
