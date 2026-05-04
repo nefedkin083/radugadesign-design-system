@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Radugadesign Design System</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
+<style>
+    :root {
+      --ink: #0a0a0a;
+      --paper: #ffffff;
+      --muted: #6b6b6b;
+      --line: #e6e6e6;
+      --soft: #f6f6f6;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+    body { font-family: 'Geologica', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 64px 56px 120px; }
+    header { padding-bottom: 32px; border-bottom: 1px solid var(--line); margin-bottom: 56px; }
+    header h1 { font-size: 56px; line-height: 1; letter-spacing: -0.02em; margin: 0 0 18px; font-weight: 600; }
+    header p { color: var(--muted); margin: 0; max-width: 60ch; font-size: 19px; }
+    section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    section:last-of-type { border-bottom: none; }
+    h2 { font-size: 36px; letter-spacing: -0.015em; font-weight: 600; margin: 0 0 28px; }
+    h3 { font-size: 22px; font-weight: 600; margin: 32px 0 12px; }
+    p { margin: 0 0 14px; max-width: 70ch; }
+    a { color: var(--ink); }
+    code { font-family: 'Iosevka', 'SF Mono', Menlo, monospace; font-size: 14px; background: var(--soft); padding: 2px 6px; border-radius: 4px; }
+    pre { background: var(--soft); padding: 18px 22px; border-radius: 8px; overflow-x: auto; line-height: 1.5; }
+    pre code { background: none; padding: 0; font-size: 14px; }
+    ul, ol { padding-left: 22px; margin: 0 0 14px; }
+    li { margin: 6px 0; }
+    .specimen { margin-top: 28px; padding: 32px; border: 1px solid var(--line); border-radius: 12px; }
+    .specimen .display { font-size: 96px; line-height: 0.95; letter-spacing: -0.025em; font-weight: 600; margin: 0 0 16px; }
+    .specimen .display .light { color: #b8b8b8; font-weight: 300; }
+    .specimen .h2-demo { font-size: 32px; line-height: 1.1; font-weight: 500; margin: 0 0 14px; letter-spacing: -0.01em; }
+    .specimen .body { font-size: 18px; line-height: 1.5; max-width: 56ch; margin: 0 0 18px; }
+    .specimen .alpha { font-size: 18px; color: var(--muted); margin: 0; }
+    .secondary { font-family: 'Inter', system-ui, sans-serif; }
+
+    .palette { width: 100%; border-collapse: separate; border-spacing: 8px; font-size: 12px; margin-top: 8px; }
+    .palette th { font-weight: 500; color: var(--muted); text-align: left; padding: 6px 0; vertical-align: middle; }
+    .palette thead th { font-size: 13px; }
+    .palette tbody th { width: 80px; }
+    .palette td { padding: 0; }
+    .palette td .sw { display: block; width: 100%; height: 64px; border-radius: 6px; }
+    .palette td code { display: block; background: none; color: var(--muted); padding: 4px 0 0; font-size: 11px; }
+
+    .meta-row { display: flex; gap: 32px; flex-wrap: wrap; color: var(--muted); font-size: 14px; margin-top: 24px; }
+    .meta-row b { color: var(--ink); font-weight: 500; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Radugadesign Design System</h1>
+  <p>Машиночитаемая дизайн-система: токены, принципы, инструкции для агентов. Источник правды для людей и LLM.</p>
+</header>
+
+<section id="typography">
+  <h2>Типографика</h2>
+  <div class="meta-row">
+    <span><b>Основной</b> · Geologica</span>
+    <span><b>Резервный</b> · Inter</span>
+    <span><b>Лицензия</b> · OFL · Google Fonts</span>
+  </div>
+
+  <div class="specimen">
+    <div class="display">Radugadesign<span class="light">.</span></div>
+    <div class="h2-demo">Студия дизайна и медиа-инсталляций</div>
+    <div class="body">ROTOR — аудиовизуальная инсталляция, исследующая распространение волн в пространстве и добивающаяся уникального опыта для каждого зрителя.</div>
+    <div class="alpha">AaBbCc DdEeFf 01234 АаБбВв ГгДдЕё</div>
+  </div>
+
+  <div class="specimen secondary">
+    <div class="display">Inter</div>
+    <div class="body">Резервный шрифт. Body-текст в плотных интерфейсах, мелкие подписи, табличные данные. Не использовать в заголовках и постерах.</div>
+  </div>
+
+  <p><strong>Основной шрифт — Geologica.</strong> Везде, где это возможно — в Google Slides, на сайтах, в email-шаблонах, в документации, в постерах.</p>
+<p>Geologica — нейтральный гротеск с пропорциями, близкими к Pragmatica Next, но открытый по лицензии OFL и доступный одной строкой в Google Slides и Google Docs. Это значит: ни один документ, который мы передаём наружу, не теряет шрифт при открытии у партнёра. Slides не подменяет его на Arial при экспорте.</p>
+<p><strong>Запасной — Inter.</strong> Только для плотных интерфейсов, мелких подписей и табличных данных, где Geologica может казаться слишком «бренд-голосовой». Не использовать в заголовках и постерах.</p>
+<p><strong>Чего не делаем.</strong> Не используем Pragmatica Next в материалах, которые передаются наружу — у партнёра шрифта нет, ляжет на Times. Внутренние Figma-файлы — оставляем как есть.</p>
+<h2>Weights</h2>
+<p>Базовые: 400 для body, 500 для подзаголовков, 600 для заголовков, 300 для крупных дисплейных надписей с разреженным эффектом.</p>
+<h2>Подключение</h2>
+<p><strong>Google Slides / Google Docs.</strong> Insert → Font → More fonts → ищем «Geologica» → Add. После этого ставим как Theme font на весь шаблон.</p>
+<p><strong>Web.</strong> Через Google Fonts:</p>
+<pre><code class="language-html">&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre>
+<pre><code class="language-css">font-family: 'Geologica', sans-serif;
+</code></pre>
+<p><strong>Self-hosting.</strong> Файлы — <code>github.com/google/fonts/tree/main/ofl/geologica</code>. Variable TTF: <code>Geologica[CRSV,SHRP,slnt,wght].ttf</code>. Лицензия OFL — можно класть в репозиторий.</p>
+</section>
+
+<section id="palette">
+  <h2>Цветовая палитра</h2>
+  <p style="color:var(--muted); max-width: 60ch;">13 hue × 6 tone = 78 цветов. Палитра-инструмент, не идентичность бренда.</p>
+  <table class='palette'><thead><tr><th></th><th>cyan</th><th>sky</th><th>blue</th><th>indigo</th><th>purple</th><th>magenta</th><th>pink</th><th>red</th><th>coral</th><th>orange</th><th>yellow</th><th>lime</th><th>green</th></tr></thead><tbody><tr><th>bright</th><td><span class="sw" style="background:#1DEEEB"></span><code>#1DEEEB</code></td><td><span class="sw" style="background:#14D8FF"></span><code>#14D8FF</code></td><td><span class="sw" style="background:#29A6FE"></span><code>#29A6FE</code></td><td><span class="sw" style="background:#4D73F3"></span><code>#4D73F3</code></td><td><span class="sw" style="background:#9756E5"></span><code>#9756E5</code></td><td><span class="sw" style="background:#DA5BBE"></span><code>#DA5BBE</code></td><td><span class="sw" style="background:#EF64A7"></span><code>#EF64A7</code></td><td><span class="sw" style="background:#FE4D70"></span><code>#FE4D70</code></td><td><span class="sw" style="background:#FF6259"></span><code>#FF6259</code></td><td><span class="sw" style="background:#FF8C26"></span><code>#FF8C26</code></td><td><span class="sw" style="background:#FFD900"></span><code>#FFD900</code></td><td><span class="sw" style="background:#B0C63A"></span><code>#B0C63A</code></td><td><span class="sw" style="background:#84BD5D"></span><code>#84BD5D</code></td></tr><tr><th>vivid</th><td><span class="sw" style="background:#1AD4D1"></span><code>#1AD4D1</code></td><td><span class="sw" style="background:#12C0E3"></span><code>#12C0E3</code></td><td><span class="sw" style="background:#2494E2"></span><code>#2494E2</code></td><td><span class="sw" style="background:#4466D8"></span><code>#4466D8</code></td><td><span class="sw" style="background:#864CCC"></span><code>#864CCC</code></td><td><span class="sw" style="background:#C251A9"></span><code>#C251A9</code></td><td><span class="sw" style="background:#D45994"></span><code>#D45994</code></td><td><span class="sw" style="background:#E24464"></span><code>#E24464</code></td><td><span class="sw" style="background:#E3574F"></span><code>#E3574F</code></td><td><span class="sw" style="background:#E37C22"></span><code>#E37C22</code></td><td><span class="sw" style="background:#E3C100"></span><code>#E3C100</code></td><td><span class="sw" style="background:#9CB034"></span><code>#9CB034</code></td><td><span class="sw" style="background:#75A853"></span><code>#75A853</code></td></tr><tr><th>deep</th><td><span class="sw" style="background:#17B9B7"></span><code>#17B9B7</code></td><td><span class="sw" style="background:#10A8C6"></span><code>#10A8C6</code></td><td><span class="sw" style="background:#2081C6"></span><code>#2081C6</code></td><td><span class="sw" style="background:#3C59BD"></span><code>#3C59BD</code></td><td><span class="sw" style="background:#7543B2"></span><code>#7543B2</code></td><td><span class="sw" style="background:#AA4794"></span><code>#AA4794</code></td><td><span class="sw" style="background:#BA4E82"></span><code>#BA4E82</code></td><td><span class="sw" style="background:#C63C57"></span><code>#C63C57</code></td><td><span class="sw" style="background:#C64C45"></span><code>#C64C45</code></td><td><span class="sw" style="background:#C66D1E"></span><code>#C66D1E</code></td><td><span class="sw" style="background:#C6A900"></span><code>#C6A900</code></td><td><span class="sw" style="background:#899A2D"></span><code>#899A2D</code></td><td><span class="sw" style="background:#679348"></span><code>#679348</code></td></tr><tr><th>rich</th><td><span class="sw" style="background:#139F9D"></span><code>#139F9D</code></td><td><span class="sw" style="background:#0D90AA"></span><code>#0D90AA</code></td><td><span class="sw" style="background:#1B6FA9"></span><code>#1B6FA9</code></td><td><span class="sw" style="background:#334DA2"></span><code>#334DA2</code></td><td><span class="sw" style="background:#653999"></span><code>#653999</code></td><td><span class="sw" style="background:#913D7F"></span><code>#913D7F</code></td><td><span class="sw" style="background:#9F436F"></span><code>#9F436F</code></td><td><span class="sw" style="background:#A9334B"></span><code>#A9334B</code></td><td><span class="sw" style="background:#AA413B"></span><code>#AA413B</code></td><td><span class="sw" style="background:#AA5D19"></span><code>#AA5D19</code></td><td><span class="sw" style="background:#AA9100"></span><code>#AA9100</code></td><td><span class="sw" style="background:#758427"></span><code>#758427</code></td><td><span class="sw" style="background:#587E3E"></span><code>#587E3E</code></td></tr><tr><th>dark</th><td><span class="sw" style="background:#0D6A68"></span><code>#0D6A68</code></td><td><span class="sw" style="background:#096071"></span><code>#096071</code></td><td><span class="sw" style="background:#124A71"></span><code>#124A71</code></td><td><span class="sw" style="background:#22336C"></span><code>#22336C</code></td><td><span class="sw" style="background:#432666"></span><code>#432666</code></td><td><span class="sw" style="background:#612854"></span><code>#612854</code></td><td><span class="sw" style="background:#6A2C4A"></span><code>#6A2C4A</code></td><td><span class="sw" style="background:#712232"></span><code>#712232</code></td><td><span class="sw" style="background:#712C28"></span><code>#712C28</code></td><td><span class="sw" style="background:#713E11"></span><code>#713E11</code></td><td><span class="sw" style="background:#716000"></span><code>#716000</code></td><td><span class="sw" style="background:#4E581A"></span><code>#4E581A</code></td><td><span class="sw" style="background:#3B5429"></span><code>#3B5429</code></td></tr><tr><th>charcoal</th><td><span class="sw" style="background:#0A4F4E"></span><code>#0A4F4E</code></td><td><span class="sw" style="background:#074855"></span><code>#074855</code></td><td><span class="sw" style="background:#0E3755"></span><code>#0E3755</code></td><td><span class="sw" style="background:#1A2651"></span><code>#1A2651</code></td><td><span class="sw" style="background:#321D4C"></span><code>#321D4C</code></td><td><span class="sw" style="background:#491E3F"></span><code>#491E3F</code></td><td><span class="sw" style="background:#502138"></span><code>#502138</code></td><td><span class="sw" style="background:#551A25"></span><code>#551A25</code></td><td><span class="sw" style="background:#55211E"></span><code>#55211E</code></td><td><span class="sw" style="background:#552F0D"></span><code>#552F0D</code></td><td><span class="sw" style="background:#554800"></span><code>#554800</code></td><td><span class="sw" style="background:#3B4213"></span><code>#3B4213</code></td><td><span class="sw" style="background:#2C3F1F"></span><code>#2C3F1F</code></td></tr></tbody></table>
+  <p><strong>У Radugadesign нет одного фирменного цвета.</strong> Цитата из guideline: «есть цветовая палитра, которую можно использовать при работе с материалами, где она необходима — например, в 3D-графике, иллюстрациях или мерче». Это намеренное решение бренда: цвет — инструмент, а не идентичность.</p>
+<p>Идентичность держится на типографике (Geologica) и принципах композиции. Цвет — поверх.</p>
+<h2>Структура палитры</h2>
+<p>13 hue-колонок × 6 tone-рядов = 78 цветов. Колонки идут по спектру: cyan → sky → blue → indigo → purple → magenta → pink → red → coral → orange → yellow → lime → green. Тоны — от насыщенно-светлого (<code>bright</code>) до угольно-тёмного (<code>charcoal</code>).</p>
+<h2>Как выбирать цвет</h2>
+<p>Для одного материала (постер, обложка, инсталляция) — одна-две колонки палитры. Не смешиваем три и больше hue в одной композиции, иначе теряется системность.</p>
+<p>Контрастные пары — между крайними тонами одной колонки: <code>bright</code> поверх <code>charcoal</code> той же колонки или наоборот. Это гарантирует AA-контраст для текста.</p>
+<p>Соседние колонки (cyan + sky, orange + yellow) — для мягких градиентов и переливов. Колонки с противоположных концов (cyan + red, blue + orange) — для резких контрастных сцен.</p>
+<h2>Чего не делаем</h2>
+<p>Не используем нейтральные серые из старых проектов как «бренд-цвет». В файле много серых из конкретных постеров и кейсов — это атавизмы, не палитра. Если нужен нейтральный — берём <code>ink #000</code> или <code>paper #FFF</code>.</p>
+<p>Не задаём один доминирующий цвет на всю коммуникацию бренда. Палитра — инструмент с переменной частью; постоянная часть — типографика и сетка.</p>
+</section>
+
+</div>
+</body>
+</html>
