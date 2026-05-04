@@ -1,0 +1,400 @@
+{
+  "families": [
+    [
+      "Pragmatica Next VF",
+      4701
+    ],
+    [
+      "Inter",
+      2087
+    ],
+    [
+      "Helios",
+      472
+    ],
+    [
+      "Montserrat",
+      470
+    ],
+    [
+      "Iosevka",
+      447
+    ],
+    [
+      "Pragmatica",
+      366
+    ],
+    [
+      "GPN_DIN",
+      234
+    ],
+    [
+      "derzky",
+      84
+    ],
+    [
+      "Resist Mono",
+      72
+    ],
+    [
+      "Suisse Int'l",
+      53
+    ],
+    [
+      "Favorit Pro",
+      44
+    ],
+    [
+      "Styrene A Web",
+      21
+    ],
+    [
+      "TT Neoris Trial Variable",
+      20
+    ],
+    [
+      "Helvetica",
+      11
+    ],
+    [
+      "Grafier Variable",
+      6
+    ],
+    [
+      "Factor A",
+      5
+    ],
+    [
+      "Nekst Mono",
+      4
+    ],
+    [
+      "TRIAL Factor A",
+      2
+    ],
+    [
+      "Suisse Intl",
+      1
+    ]
+  ],
+  "variants": [
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-XXS600",
+      500,
+      2449
+    ],
+    [
+      "Inter",
+      null,
+      400,
+      1884
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M500",
+      430,
+      847
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M500",
+      450,
+      763
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M400",
+      400,
+      377
+    ],
+    [
+      "Helios",
+      "HeliosBold",
+      700,
+      356
+    ],
+    [
+      "Iosevka",
+      "Iosevka-Medium",
+      500,
+      306
+    ],
+    [
+      "Montserrat",
+      "Montserrat-SemiBold",
+      600,
+      254
+    ],
+    [
+      "GPN_DIN",
+      "GPN_DIN-Regular",
+      400,
+      234
+    ],
+    [
+      "Pragmatica",
+      "Pragmatica-Medium",
+      500,
+      220
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M500",
+      480,
+      145
+    ],
+    [
+      "Iosevka",
+      "Iosevka",
+      400,
+      136
+    ],
+    [
+      "Inter",
+      null,
+      700,
+      126
+    ],
+    [
+      "Helios",
+      "Helios",
+      400,
+      116
+    ],
+    [
+      "Montserrat",
+      "Montserrat-Medium",
+      500,
+      106
+    ],
+    [
+      "derzky",
+      "derzky",
+      400,
+      84
+    ],
+    [
+      "Pragmatica",
+      "PragmaticaBook-Reg",
+      400,
+      78
+    ],
+    [
+      "Inter",
+      null,
+      450,
+      62
+    ],
+    [
+      "Resist Mono",
+      "ResistMono-Regular",
+      400,
+      56
+    ],
+    [
+      "Suisse Int'l",
+      "SuisseIntl-Regular",
+      400,
+      53
+    ],
+    [
+      "Pragmatica",
+      "PragmaticaBlack",
+      800,
+      51
+    ],
+    [
+      "Montserrat",
+      "Montserrat-Bold",
+      700,
+      46
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M600",
+      564,
+      43
+    ],
+    [
+      "Montserrat",
+      "Montserrat-ExtraBold",
+      800,
+      36
+    ],
+    [
+      "Montserrat",
+      "Montserrat-Regular",
+      400,
+      28
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-Regular",
+      430,
+      27
+    ],
+    [
+      "Favorit Pro",
+      "FavoritPro-Italic",
+      400,
+      25
+    ],
+    [
+      "Styrene A Web",
+      "StyreneAWeb-Regular",
+      400,
+      21
+    ],
+    [
+      "Favorit Pro",
+      "FavoritPro-Regular",
+      400,
+      19
+    ],
+    [
+      "Resist Mono",
+      "ResistMono-Medium",
+      500,
+      16
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-S300",
+      280,
+      15
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-Regular",
+      500,
+      13
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M500",
+      464,
+      12
+    ],
+    [
+      "Helvetica",
+      "Helvetica",
+      400,
+      11
+    ],
+    [
+      "TT Neoris Trial Variable",
+      "TTNeorisTrialVariable-Regular",
+      430,
+      11
+    ],
+    [
+      "Inter",
+      "Inter-Bold",
+      700,
+      10
+    ],
+    [
+      "Pragmatica",
+      "PragmaticaBold-Reg",
+      700,
+      9
+    ],
+    [
+      "TT Neoris Trial Variable",
+      "TTNeorisTrialVariable-Regular",
+      450,
+      9
+    ],
+    [
+      "Pragmatica",
+      "PragmaticaBook-Italic",
+      400,
+      7
+    ],
+    [
+      "Grafier Variable",
+      "GrafierVariable-Regular",
+      400,
+      6
+    ],
+    [
+      "Factor A",
+      "FactorA-Regular",
+      400,
+      5
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-XS700",
+      620,
+      5
+    ],
+    [
+      "Nekst Mono",
+      "NekstMono-Medium",
+      500,
+      4
+    ],
+    [
+      "Iosevka",
+      "Iosevka-Semibold",
+      600,
+      4
+    ],
+    [
+      "Inter",
+      null,
+      500,
+      4
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-S600",
+      540,
+      2
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-Regular",
+      400,
+      2
+    ],
+    [
+      "TRIAL Factor A",
+      "TRIALFactorA-Regular",
+      400,
+      2
+    ],
+    [
+      "Inter",
+      "Inter-SemiBold",
+      600,
+      1
+    ],
+    [
+      "Suisse Intl",
+      "SuisseIntl-Medium",
+      500,
+      1
+    ],
+    [
+      "Pragmatica",
+      "PragmaticaMedium-Oblique",
+      500,
+      1
+    ],
+    [
+      "Iosevka",
+      "Iosevka-Heavy",
+      900,
+      1
+    ],
+    [
+      "Pragmatica Next VF",
+      "PragmaticaNextVF-M500",
+      500,
+      1
+    ]
+  ]
+}

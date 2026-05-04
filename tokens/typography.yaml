@@ -1,0 +1,46 @@
+version: 0.1
+status: draft
+
+source:
+  origin: figma rd4-C
+  primary_in_use: Pragmatica Next VF
+  fallback_in_use: Inter
+  notes: |
+    9100 TEXT-нод. Pragmatica Next VF — 52% (4701).
+    Inter — 23% (2087). Остальные — Helios, Montserrat, Iosevka,
+    Pragmatica, GPN_DIN — точечно по проектам.
+
+candidates:
+  - name: Geologica
+    family: "Geologica"
+    license: OFL
+    google_fonts: true
+    variable: true
+    axes: [wght, slnt, CRSV, SHRP]
+    rationale: Самый нейтральный grotesque на GF. Близко к Pragmatica Next по характеру.
+  - name: Onest
+    family: "Onest"
+    license: OFL
+    google_fonts: true
+    variable: true
+    axes: [wght]
+    rationale: Острее и продуктовее. Сильная кириллица.
+  - name: Inter
+    family: "Inter"
+    license: OFL
+    google_fonts: true
+    variable: true
+    axes: [opsz, wght]
+    rationale: Самый универсальный safe-выбор. Уже встречается в файле.
+  - name: Manrope
+    family: "Manrope"
+    license: OFL
+    google_fonts: true
+    variable: true
+    axes: [wght]
+    rationale: Geometric sans с тёплым «техно» характером. Для акцентов.
+
+decision:
+  primary: null
+  secondary: null
+  decided_at: null
