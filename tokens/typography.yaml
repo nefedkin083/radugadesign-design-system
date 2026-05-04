@@ -41,6 +41,27 @@ candidates:
     rationale: Geometric sans с тёплым «техно» характером. Для акцентов.
 
 decision:
-  primary: null
-  secondary: null
-  decided_at: null
+  primary: Geologica
+  secondary: Inter
+  decided_at: 2026-05-04
+  decided_by: NIO
+
+usage:
+  primary:
+    family: Geologica
+    weights: [300, 400, 500, 600, 700, 800]
+    google_slides: |
+      В Google Slides: Insert → Font → More fonts → ищем "Geologica" → Add.
+      Выставляем как Theme font для всего шаблона.
+    web: |
+      <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      font-family: 'Geologica', sans-serif;
+    self_host: ofl/geologica на github.com/google/fonts
+  secondary:
+    family: Inter
+    use_for: Body-текст в плотных интерфейсах, мелкие подписи, табличные данные.
+    google_slides: |
+      Google Slides: Insert → Font → More fonts → "Inter".
+    web: |
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      font-family: 'Inter', sans-serif;
