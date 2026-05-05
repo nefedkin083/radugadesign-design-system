@@ -6,6 +6,7 @@ import markdown
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOKENS = ROOT / "tokens"
 PRINCIPLES = ROOT / "principles"
+LLM = ROOT / "llm"
 DIST = ROOT / "docs"
 DIST.mkdir(parents=True, exist_ok=True)
 
@@ -25,6 +26,7 @@ def main():
     palette = yaml.safe_load((TOKENS / "colors.yaml").read_text())
     typo_md = read_md(PRINCIPLES / "typography.md")
     color_md = read_md(PRINCIPLES / "colors.md")
+    llm_md = read_md(LLM / "system.md")
 
     primary_font = typo["decision"]["primary"]
     secondary_font = typo["decision"]["secondary"]
@@ -137,6 +139,13 @@ def main():
   <p style="color:var(--muted); max-width: 60ch;">13 hue × 6 tone = 78 цветов. Палитра-инструмент, не идентичность бренда.</p>
   {palette_table}
   {color_md}
+</section>
+
+<section id="llm">
+  <h2>Инструкция для агента</h2>
+  <p style="color:var(--muted); max-width: 60ch;">System prompt: загрузите как system message в LLM, передающую токены и принципы как reference.</p>
+  <p><a href="../llm/system.md"><code>llm/system.md</code></a> — raw markdown</p>
+  <div class="prose">{llm_md}</div>
 </section>
 
 </div>
