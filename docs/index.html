@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
 <style>
     :root {
       --ink: #0a0a0a;
@@ -17,7 +17,7 @@
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
-    body { font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }
+    body { font-family: 'Inter', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }
     .wrap { max-width: 1280px; margin: 0 auto; padding: 64px 56px 120px; }
     header { padding-bottom: 32px; border-bottom: 1px solid var(--line); margin-bottom: 56px; }
     header h1 { font-size: 56px; line-height: 1; letter-spacing: -0.02em; margin: 0 0 18px; font-weight: 600; }
@@ -73,7 +73,7 @@
 <section id="typography">
   <h2>Типографика</h2>
   <div class="meta-row">
-    <span><b>Основной</b> · Manrope</span>
+    <span><b>Основной</b> · Inter</span>
     <span><b>Резервный</b> · Inter</span>
     <span><b>Лицензия</b> · OFL · Google Fonts</span>
   </div>
@@ -90,21 +90,20 @@
     <div class="body">Резервный шрифт. Body-текст в плотных интерфейсах, мелкие подписи, табличные данные. Не использовать в заголовках и постерах.</div>
   </div>
 
-  <p><strong>Основной шрифт — Manrope.</strong> Везде, где это возможно — в Google Slides, на сайтах, в email-шаблонах, в документации, в постерах.</p>
-<p>Manrope — geometric sans с тёплым «техно» характером, который ложится на визуальный код студии. Лицензия OFL, доступен одной строкой в Google Slides и Google Docs. Это значит: ни один документ, который мы передаём наружу, не теряет шрифт при открытии у партнёра. Slides не подменяет его на Arial при экспорте.</p>
-<p><strong>Запасной — Inter.</strong> Только для плотных интерфейсов, мелких подписей и табличных данных, где Manrope может казаться слишком «бренд-голосовым». Не использовать в заголовках и постерах.</p>
-<p><strong>Чего не делаем.</strong> Не используем Pragmatica Next в материалах, которые передаются наружу — у партнёра шрифта нет, ляжет на Times. Внутренние Figma-файлы — оставляем как есть.</p>
+  <p><strong>Один шрифт — Inter.</strong> Везде: в Google Slides, на сайтах, в email-шаблонах, в документации, в постерах, в интерфейсах.</p>
+<p>Inter — нейтральный grotesque с сильной кириллицей и лучшей читаемостью на экране среди свободных аналогов. Лицензия OFL, доступен одной строкой в Google Slides и Google Docs. Это значит: ни один документ, который мы передаём наружу, не теряет шрифт при открытии у партнёра. Slides не подменяет его на Arial при экспорте.</p>
+<p><strong>Чего не делаем.</strong> Не используем Pragmatica Next в материалах, которые передаются наружу — у партнёра шрифта нет, ляжет на Times. Внутренние Figma-файлы — оставляем как есть. Не миксуем Inter с другим основным шрифтом «для разнообразия» — этого хватает.</p>
 <h2>Weights</h2>
-<p>Базовые: 400 для body, 500 для подзаголовков, 600 для заголовков, 300 для крупных дисплейных надписей с разреженным эффектом, 700–800 для редких силовых акцентов.</p>
+<p>400 для body, 500 для подзаголовков, 600 для заголовков, 300 для крупных дисплейных надписей с разреженным эффектом, 700–800 для редких силовых акцентов.</p>
 <h2>Подключение</h2>
-<p><strong>Google Slides / Google Docs.</strong> Insert → Font → More fonts → ищем «Manrope» → Add. После этого ставим как Theme font на весь шаблон.</p>
+<p><strong>Google Slides / Google Docs.</strong> Insert → Font → More fonts → ищем «Inter» → Add. После этого ставим как Theme font на весь шаблон.</p>
 <p><strong>Web.</strong> Через Google Fonts:</p>
 <pre><code class="language-html">&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
 </code></pre>
-<pre><code class="language-css">font-family: 'Manrope', sans-serif;
+<pre><code class="language-css">font-family: 'Inter', sans-serif;
 </code></pre>
-<p><strong>Self-hosting.</strong> Файлы — <code>github.com/google/fonts/tree/main/ofl/manrope</code>. Variable TTF: <code>Manrope[wght].ttf</code>. Лицензия OFL — можно класть в репозиторий.</p>
+<p><strong>Self-hosting.</strong> Файлы — <code>github.com/google/fonts/tree/main/ofl/inter</code>. Variable TTF: <code>Inter[opsz,wght].ttf</code>. Лицензия OFL — можно класть в репозиторий.</p>
 </section>
 
 <section id="palette">
@@ -139,18 +138,19 @@
 <p>Вы — дизайн-агент бренда Radugadesign. Ваша задача — создавать материалы (постеры, презентации, посты, веб-страницы, обложки), которые опознаются как сделанные в стиле Radugadesign.</p>
 <p>Идентичность бренда держится на трёх осях:</p>
 <ol>
-<li><strong>Типографика</strong> — постоянная часть. Manrope как основной шрифт, Inter как резервный для плотных интерфейсов. Других шрифтов в материалах для внешней коммуникации нет.</li>
+<li><strong>Типографика</strong> — постоянная часть. Один шрифт Inter везде — заголовки, body, интерфейсы, мелкие подписи. Других шрифтов в материалах для внешней коммуникации нет.</li>
 <li><strong>Композиция</strong> — постоянная часть. Чёткая сетка, крупные акцентные элементы, много воздуха.</li>
 <li><strong>Цвет</strong> — переменная часть. У бренда нет одного фирменного цвета. Палитра — инструмент с 78 цветами в матрице 13 hue × 6 tone. Один материал использует 1–2 hue.</li>
 </ol>
 <h2>Жёсткие правила</h2>
 <p><strong>Шрифты</strong></p>
 <ul>
-<li>Заголовки и дисплейные надписи — Manrope, weight 500–600.</li>
-<li>Body — Manrope weight 400.</li>
-<li>Плотные интерфейсные тексты, таблицы, мелкие подписи — Inter weight 400. В заголовках Inter не использовать.</li>
+<li>Один шрифт на всё — Inter. Не миксовать с другим основным.</li>
+<li>Заголовки и дисплейные надписи — Inter weight 500–600.</li>
+<li>Body — Inter weight 400.</li>
+<li>Дисплейные крупные надписи с разреженным эффектом — Inter weight 300.</li>
 <li>Никогда не использовать Pragmatica Next в материалах для внешней передачи: у получателя её не будет, текст развалится.</li>
-<li>В Google Slides и Google Docs выставлять Manrope как Theme font.</li>
+<li>В Google Slides и Google Docs выставлять Inter как Theme font.</li>
 </ul>
 <p><strong>Цвет</strong></p>
 <ul>
@@ -185,7 +185,7 @@
 <li>Не миксуете 3+ hue в одной композиции.</li>
 <li>Не используете нейтральные серые из палитры старых проектов.</li>
 <li>Не делаете градиенты от случайной пары цветов — только из той же hue или соседней.</li>
-<li>Не подменяете Manrope на Helvetica/Arial при генерации HTML/CSS — подключайте через Google Fonts.</li>
+<li>Не подменяете Inter на Helvetica/Arial при генерации HTML/CSS — подключайте через Google Fonts.</li>
 </ul>
 <h2>Формат ответа</h2>
 <p>Когда задача — сгенерировать материал в виде кода (HTML, SVG, JSX, marp/pptx):</p>
