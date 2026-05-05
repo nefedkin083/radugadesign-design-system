@@ -41,22 +41,26 @@ candidates:
     rationale: Geometric sans с тёплым «техно» характером. Для акцентов.
 
 decision:
-  primary: Geologica
+  primary: Manrope
   secondary: Inter
-  decided_at: 2026-05-04
+  decided_at: 2026-05-05
   decided_by: NIO
+  notes: |
+    Стартовали с Geologica 2026-05-04. На следующий день
+    переключились на Manrope — geometric sans с более выраженным
+    «техно» характером, лучше попадает в визуальный код студии.
 
 usage:
   primary:
-    family: Geologica
-    weights: [300, 400, 500, 600, 700, 800]
+    family: Manrope
+    weights: [200, 300, 400, 500, 600, 700, 800]
     google_slides: |
-      В Google Slides: Insert → Font → More fonts → ищем "Geologica" → Add.
+      В Google Slides: Insert → Font → More fonts → ищем "Manrope" → Add.
       Выставляем как Theme font для всего шаблона.
     web: |
-      <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-      font-family: 'Geologica', sans-serif;
-    self_host: ofl/geologica на github.com/google/fonts
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      font-family: 'Manrope', sans-serif;
+    self_host: ofl/manrope на github.com/google/fonts
   secondary:
     family: Inter
     use_for: Body-текст в плотных интерфейсах, мелкие подписи, табличные данные.

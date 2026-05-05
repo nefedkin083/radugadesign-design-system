@@ -110,7 +110,7 @@ def main():
     }}
     * {{ box-sizing: border-box; }}
     html, body {{ margin: 0; padding: 0; background: var(--paper); color: var(--ink); }}
-    body {{ font-family: 'Geologica', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }}
+    body {{ font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }}
     .wrap {{ max-width: 1280px; margin: 0 auto; padding: 64px 56px 120px; }}
     header {{ padding-bottom: 32px; border-bottom: 1px solid var(--line); margin-bottom: 56px; }}
     header h1 {{ font-size: 56px; line-height: 1; letter-spacing: -0.02em; margin: 0 0 18px; font-weight: 600; }}
@@ -163,7 +163,7 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
 <style>{css}</style>
 </head>
 <body>
