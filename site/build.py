@@ -1,4 +1,10 @@
-"""Build static site from tokens and principles. Output: docs/index.html."""
+"""Build static site from tokens and principles.
+
+By default writes docs/index.html with the primary font from tokens/typography.yaml.
+Pass --font=Inter --out=docs-inter to build a font-comparison variant where
+every text uses the override font.
+"""
+import argparse
 import json
 import pathlib
 import shutil
@@ -10,8 +16,6 @@ TOKENS = ROOT / "tokens"
 PRINCIPLES = ROOT / "principles"
 LLM = ROOT / "llm"
 PATTERNS = ROOT / "patterns" / "guideline"
-DIST = ROOT / "docs"
-DIST.mkdir(parents=True, exist_ok=True)
 
 
 def read_md(path: pathlib.Path) -> str:
@@ -25,11 +29,23 @@ def read_md(path: pathlib.Path) -> str:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--font", default=None, help="Override primary font everywhere (e.g. Inter, Manrope)")
+    ap.add_argument("--out", default="docs", help="Output directory under repo root")
+    ap.add_argument("--label", default=None, help="Optional label shown in header")
+    args = ap.parse_args()
+
+    DIST = ROOT / args.out
+    DIST.mkdir(parents=True, exist_ok=True)
+
     typo = yaml.safe_load((TOKENS / "typography.yaml").read_text())
     palette = yaml.safe_load((TOKENS / "colors.yaml").read_text())
     typo_md = read_md(PRINCIPLES / "typography.md")
     color_md = read_md(PRINCIPLES / "colors.md")
     llm_md = read_md(LLM / "system.md")
+
+    primary_override = args.font
+    label = args.label
 
     # patterns: prefer manifest with PNGs, fall back to text-only listing from sections.json
     patterns_html = ""
@@ -82,8 +98,9 @@ def main():
             chunks.append("</div></div>")
         patterns_html = "".join(chunks)
 
-    primary_font = typo["decision"]["primary"]
-    secondary_font = typo["decision"]["secondary"]
+    primary_font = primary_override or typo["decision"]["primary"]
+    secondary_font = primary_override or typo["decision"]["secondary"]
+    body_font = primary_font
 
     # palette grid HTML
     hues = palette["hues"]
@@ -110,7 +127,7 @@ def main():
     }}
     * {{ box-sizing: border-box; }}
     html, body {{ margin: 0; padding: 0; background: var(--paper); color: var(--ink); }}
-    body {{ font-family: 'Manrope', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }}
+    body {{ font-family: '{body_font}', system-ui, sans-serif; font-size: 17px; line-height: 1.5; }}
     .wrap {{ max-width: 1280px; margin: 0 auto; padding: 64px 56px 120px; }}
     header {{ padding-bottom: 32px; border-bottom: 1px solid var(--line); margin-bottom: 56px; }}
     header h1 {{ font-size: 56px; line-height: 1; letter-spacing: -0.02em; margin: 0 0 18px; font-weight: 600; }}
@@ -132,7 +149,7 @@ def main():
     .specimen .h2-demo {{ font-size: 32px; line-height: 1.1; font-weight: 500; margin: 0 0 14px; letter-spacing: -0.01em; }}
     .specimen .body {{ font-size: 18px; line-height: 1.5; max-width: 56ch; margin: 0 0 18px; }}
     .specimen .alpha {{ font-size: 18px; color: var(--muted); margin: 0; }}
-    .secondary {{ font-family: 'Inter', system-ui, sans-serif; }}
+    .secondary {{ font-family: '{secondary_font}', system-ui, sans-serif; }}
 
     .palette {{ width: 100%; border-collapse: separate; border-spacing: 8px; font-size: 12px; margin-top: 8px; }}
     .palette th {{ font-weight: 500; color: var(--muted); text-align: left; padding: 6px 0; vertical-align: middle; }}
@@ -163,15 +180,15 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family={primary_font}:wght@300;400;500;600;700;800&family={secondary_font}:wght@400;500;600;700&family=Iosevka&display=swap" rel="stylesheet">
 <style>{css}</style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <h1>Radugadesign Design System</h1>
-  <p>Машиночитаемая дизайн-система: токены, принципы, инструкции для агентов. Источник правды для людей и LLM.</p>
+  <h1>Radugadesign Design System{(' · ' + label) if label else ''}</h1>
+  <p>Машиночитаемая дизайн-система: токены, принципы, инструкции для агентов. Источник правды для людей и LLM.{(' Вариант со шрифтом ' + label + '.') if label else ''}</p>
 </header>
 
 <section id="typography">
