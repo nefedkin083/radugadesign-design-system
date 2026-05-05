@@ -1,5 +1,7 @@
-"""Build static site from tokens and principles. Output: site/dist/index.html."""
+"""Build static site from tokens and principles. Output: docs/index.html."""
+import json
 import pathlib
+import shutil
 import yaml
 import markdown
 
@@ -7,6 +9,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOKENS = ROOT / "tokens"
 PRINCIPLES = ROOT / "principles"
 LLM = ROOT / "llm"
+PATTERNS = ROOT / "patterns" / "guideline"
 DIST = ROOT / "docs"
 DIST.mkdir(parents=True, exist_ok=True)
 
@@ -27,6 +30,57 @@ def main():
     typo_md = read_md(PRINCIPLES / "typography.md")
     color_md = read_md(PRINCIPLES / "colors.md")
     llm_md = read_md(LLM / "system.md")
+
+    # patterns: prefer manifest with PNGs, fall back to text-only listing from sections.json
+    patterns_html = ""
+    manifest_path = PATTERNS / "manifest.json"
+    sections_path = ROOT / "figma-snapshot" / "guideline_sections.json"
+    from collections import defaultdict
+
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text())
+        out_assets = DIST / "patterns" / "guideline"
+        out_assets.mkdir(parents=True, exist_ok=True)
+        groups = defaultdict(list)
+        for m in manifest:
+            src = ROOT / m["file"]
+            if src.exists():
+                shutil.copyfile(src, out_assets / src.name)
+            groups[m["name"]].append(m)
+        chunks = []
+        for group_name, items in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+            chunks.append(f"<div class='pattern-group'><h3>{group_name} <span style='color:var(--muted);font-weight:400;font-size:14px'>· {len(items)}</span></h3>")
+            chunks.append("<div class='patterns'>")
+            for m in items:
+                rel = "patterns/guideline/" + pathlib.Path(m["file"]).name
+                chunks.append(
+                    f"<a class='pattern' href='{rel}' target='_blank'>"
+                    f"<div class='img' style='background-image:url(\"{rel}\")'></div>"
+                    f"<div class='name'>{m['name']}</div>"
+                    f"<div class='meta'>{m['type']} · {m['size'][0]}×{m['size'][1]}</div>"
+                    f"</a>"
+                )
+            chunks.append("</div></div>")
+        patterns_html = "".join(chunks)
+    elif sections_path.exists():
+        sections = json.loads(sections_path.read_text())
+        groups = defaultdict(list)
+        for s in sections:
+            groups[s["name"]].append(s)
+        chunks = ["<div class='note' style='padding:16px;border-radius:8px;background:#fff7d6;color:#7a6300;margin-bottom:18px;font-size:14px;'>PNG-рендеры разделов сейчас в очереди — упёрся в rate-limit Figma. Пока доступны только тексты слайдов в виде markdown.</div>"]
+        for group_name, items in sorted(groups.items(), key=lambda kv: -len(kv[1])):
+            chunks.append(f"<div class='pattern-group'><h3>{group_name} <span style='color:var(--muted);font-weight:400;font-size:14px'>· {len(items)}</span></h3>")
+            chunks.append("<div class='patterns'>")
+            for s in items:
+                md_rel = f"../principles/patterns/{s['slug']}.md"
+                chunks.append(
+                    f"<a class='pattern' href='{md_rel}' target='_blank' style='border:1px dashed var(--line);padding:14px;border-radius:8px;'>"
+                    f"<div class='name'>{s['name']}</div>"
+                    f"<div class='meta'>{s['type']} · {s['w']}×{s['h']} · slug: <code>{s['slug']}</code></div>"
+                    f"</a>"
+                )
+            chunks.append("</div></div>")
+        patterns_html = "".join(chunks)
 
     primary_font = typo["decision"]["primary"]
     secondary_font = typo["decision"]["secondary"]
@@ -90,6 +144,15 @@ def main():
 
     .meta-row {{ display: flex; gap: 32px; flex-wrap: wrap; color: var(--muted); font-size: 14px; margin-top: 24px; }}
     .meta-row b {{ color: var(--ink); font-weight: 500; }}
+
+    .patterns {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; margin-top: 24px; }}
+    .pattern {{ display: block; text-decoration: none; color: inherit; }}
+    .pattern .img {{ width: 100%; aspect-ratio: 16/9; background: #f0f0f0 center/cover no-repeat; border-radius: 8px; border: 1px solid var(--line); transition: transform 0.15s ease; }}
+    .pattern:hover .img {{ transform: scale(1.02); }}
+    .pattern .name {{ font-size: 15px; font-weight: 500; margin-top: 10px; }}
+    .pattern .meta {{ font-size: 12px; color: var(--muted); margin-top: 2px; }}
+    .pattern-group {{ margin-top: 32px; }}
+    .pattern-group h3 {{ margin-bottom: 8px; }}
     """
 
     html = f"""<!doctype html>
@@ -139,6 +202,12 @@ def main():
   <p style="color:var(--muted); max-width: 60ch;">13 hue × 6 tone = 78 цветов. Палитра-инструмент, не идентичность бренда.</p>
   {palette_table}
   {color_md}
+</section>
+
+<section id="patterns">
+  <h2>Patterns · образцы из guideline</h2>
+  <p style="color:var(--muted); max-width: 60ch;">Слайды и шаблоны из Figma-гайдлайна rd4-C. Сгруппированы по типу. Клик по карточке открывает полный PNG.</p>
+  {patterns_html}
 </section>
 
 <section id="llm">

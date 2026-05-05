@@ -1,0 +1,594 @@
+[
+  {
+    "id": "313:989",
+    "type": "SECTION",
+    "name": "Афиша события  с человеком",
+    "slug": "afisha-sobytiya-s-chelovekom",
+    "w": 5593,
+    "h": 7285
+  },
+  {
+    "id": "313:1178",
+    "type": "SECTION",
+    "name": "Вакансии",
+    "slug": "vakansii",
+    "w": 5555,
+    "h": 6267
+  },
+  {
+    "id": "313:1346",
+    "type": "SECTION",
+    "name": "Типовой пост с карточками",
+    "slug": "tipovoy-post-s-kartochkami",
+    "w": 6894,
+    "h": 5406
+  },
+  {
+    "id": "681:40233",
+    "type": "FRAME",
+    "name": "A4 - 16",
+    "slug": "a4-16",
+    "w": 1920,
+    "h": 2717
+  },
+  {
+    "id": "681:40505",
+    "type": "FRAME",
+    "name": "A4 - 17",
+    "slug": "a4-17",
+    "w": 1920,
+    "h": 2717
+  },
+  {
+    "id": "681:40537",
+    "type": "FRAME",
+    "name": "A4 - 18",
+    "slug": "a4-18",
+    "w": 1920,
+    "h": 2717
+  },
+  {
+    "id": "681:40577",
+    "type": "FRAME",
+    "name": "A4 - 19",
+    "slug": "a4-19",
+    "w": 1920,
+    "h": 2717
+  },
+  {
+    "id": "681:40605",
+    "type": "FRAME",
+    "name": "A4 - 20",
+    "slug": "a4-20",
+    "w": 1920,
+    "h": 2717
+  },
+  {
+    "id": "1098:573",
+    "type": "FRAME",
+    "name": "Icons",
+    "slug": "icons",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:846",
+    "type": "FRAME",
+    "name": "Icons",
+    "slug": "icons-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1012",
+    "type": "FRAME",
+    "name": "Стилеобразующая графика",
+    "slug": "stileobrazuyuschaya-grafika",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1146",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1220",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1243",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1267",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1326",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1350",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-4",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1476",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-5",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1590",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-6",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1664",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-7",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1758",
+    "type": "FRAME",
+    "name": "logo_i",
+    "slug": "logo-i-8",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1848",
+    "type": "FRAME",
+    "name": "Typefce",
+    "slug": "typefce",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1866",
+    "type": "FRAME",
+    "name": "Typefce",
+    "slug": "typefce-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:1876",
+    "type": "FRAME",
+    "name": "Typefce",
+    "slug": "typefce-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:2041",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:21940",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-4",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22037",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-5",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22118",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-6",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22132",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-7",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22144",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-8",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22166",
+    "type": "FRAME",
+    "name": "logo",
+    "slug": "logo-9",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22180",
+    "type": "FRAME",
+    "name": "Sign",
+    "slug": "sign",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22241",
+    "type": "FRAME",
+    "name": "Sign",
+    "slug": "sign-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22261",
+    "type": "FRAME",
+    "name": "Sign",
+    "slug": "sign-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22281",
+    "type": "FRAME",
+    "name": "Styles",
+    "slug": "styles",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22357",
+    "type": "FRAME",
+    "name": "Styles",
+    "slug": "styles-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22438",
+    "type": "FRAME",
+    "name": "72",
+    "slug": "72",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22443",
+    "type": "FRAME",
+    "name": "69",
+    "slug": "69",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22448",
+    "type": "FRAME",
+    "name": "70",
+    "slug": "70",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22453",
+    "type": "FRAME",
+    "name": "71",
+    "slug": "71",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22458",
+    "type": "FRAME",
+    "name": "112",
+    "slug": "112",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22463",
+    "type": "FRAME",
+    "name": "cover",
+    "slug": "cover",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22466",
+    "type": "FRAME",
+    "name": "cover",
+    "slug": "cover-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22469",
+    "type": "FRAME",
+    "name": "Presentation",
+    "slug": "presentation",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22695",
+    "type": "FRAME",
+    "name": "Presentation",
+    "slug": "presentation-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:22835",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23065",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-2",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23115",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23156",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-4",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23233",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-5",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23349",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-6",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23478",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-7",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23500",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-8",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23603",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-9",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23704",
+    "type": "FRAME",
+    "name": "SMM",
+    "slug": "smm",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23747",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-10",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23837",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-11",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23913",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-12",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:23990",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-13",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24060",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-14",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24128",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-15",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24205",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-16",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24283",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-17",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24350",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-18",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24418",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-19",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24446",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-20",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24541",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-21",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24623",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-22",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24695",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-23",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24751",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-24",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24845",
+    "type": "FRAME",
+    "name": "Layout",
+    "slug": "layout-25",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24902",
+    "type": "FRAME",
+    "name": "Presentation",
+    "slug": "presentation-3",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24918",
+    "type": "FRAME",
+    "name": "Presentation",
+    "slug": "presentation-4",
+    "w": 1920,
+    "h": 1080
+  },
+  {
+    "id": "1098:24934",
+    "type": "FRAME",
+    "name": "Presentation",
+    "slug": "presentation-5",
+    "w": 1920,
+    "h": 1080
+  }
+]

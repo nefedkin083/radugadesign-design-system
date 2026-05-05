@@ -1,0 +1,87 @@
+# Typefce
+
+`figma://1098:1876` · FRAME · 1920×1080
+
+## Тексты на слайде
+
+- У radugadesign нет фирменного цвета, но есть цветовая палитра, которую можно использовать при работе с материалами, где она необходима — например, в 3D-графике, иллюстрациях или мерче. *(font 24)*
+- Hex #1deeeb *(font 16)*
+- Hex #14d8ff *(font 16)*
+- Hex #29a6fe *(font 16)*
+- Hex #4d73f3 *(font 16)*
+- Hex #9756e5 *(font 16)*
+- Hex #da5bbe *(font 16)*
+- Hex #ef64a7 *(font 16)*
+- Hex #fe4d70 *(font 16)*
+- Hex #ff6259 *(font 16)*
+- Hex #ff8c26 *(font 16)*
+- Hex #ffd900 *(font 16)*
+- Hex #b0c63a *(font 16)*
+- Hex #84bd5d *(font 16)*
+- Hex #1ad4d1 *(font 16)*
+- Hex #12c0e3 *(font 16)*
+- Hex #2494e2 *(font 16)*
+- Hex #4466d8 *(font 16)*
+- Hex #864ccc *(font 16)*
+- Hex #c251a9 *(font 16)*
+- Hex #d45994 *(font 16)*
+- Hex #e24464 *(font 16)*
+- Hex #e3574f *(font 16)*
+- Hex #e37c22 *(font 16)*
+- Hex #e3c100 *(font 16)*
+- Hex #9cb034 *(font 16)*
+- Hex #75a853 *(font 16)*
+- Hex #17b9b7 *(font 16)*
+- Hex #10a8c6 *(font 16)*
+- Hex #2081c6 *(font 16)*
+- Hex #3c59bd *(font 16)*
+- Hex #7543b2 *(font 16)*
+- Hex #aa4794 *(font 16)*
+- Hex #ba4e82 *(font 16)*
+- Hex #c63c57 *(font 16)*
+- Hex #c64c45 *(font 16)*
+- Hex #c66d1e *(font 16)*
+- Hex #c6a900 *(font 16)*
+- Hex #899a2d *(font 16)*
+- Hex #679348 *(font 16)*
+- Hex #139f9d *(font 16)*
+- Hex #0d90aa *(font 16)*
+- Hex #1b6fa9 *(font 16)*
+- Hex #334da2 *(font 16)*
+- Hex #653999 *(font 16)*
+- Hex #913d7f *(font 16)*
+- Hex #9f436f *(font 16)*
+- Hex #a9334b *(font 16)*
+- Hex #aa413b *(font 16)*
+- Hex #aa5d19 *(font 16)*
+- Hex #aa9100 *(font 16)*
+- Hex #758427 *(font 16)*
+- Hex #587e3e *(font 16)*
+- Hex #0d6a68 *(font 16)*
+- Hex #096071 *(font 16)*
+- Hex #124a71 *(font 16)*
+- Hex #22336c *(font 16)*
+- Hex #432666 *(font 16)*
+- Hex #612854 *(font 16)*
+- Hex #6a2c4a *(font 16)*
+- Hex #712232 *(font 16)*
+- Hex #712c28 *(font 16)*
+- Hex #713e11 *(font 16)*
+- Hex #716000 *(font 16)*
+- Hex #4e581a *(font 16)*
+- Hex #3b5429 *(font 16)*
+- Hex #0a4f4e *(font 16)*
+- Hex #074855 *(font 16)*
+- Hex #0e3755 *(font 16)*
+- Hex #1a2651 *(font 16)*
+- Hex #321d4c *(font 16)*
+- Hex #491e3f *(font 16)*
+- Hex #502138 *(font 16)*
+- Hex #551a25 *(font 16)*
+- Hex #55211e *(font 16)*
+- Hex #552f0d *(font 16)*
+- Hex #554800 *(font 16)*
+- Hex #3b4213 *(font 16)*
+- Hex #2c3f1f *(font 16)*
+- Цветовая палитра *(font 24)*
+- 27 *(font 24)*
