@@ -42,6 +42,8 @@ def main():
     palette = yaml.safe_load((TOKENS / "colors.yaml").read_text())
     typo_md = read_md(PRINCIPLES / "typography.md")
     color_md = read_md(PRINCIPLES / "colors.md")
+    smm_md = read_md(PRINCIPLES / "smm.md")
+    icons_md = read_md(PRINCIPLES / "icons.md")
     llm_md = read_md(LLM / "system.md")
 
     primary_override = args.font
@@ -170,6 +172,13 @@ def main():
     .pattern .meta {{ font-size: 12px; color: var(--muted); margin-top: 2px; }}
     .pattern-group {{ margin-top: 32px; }}
     .pattern-group h3 {{ margin-bottom: 8px; }}
+    .prose h2 {{ font-size: 22px; font-weight: 600; margin: 36px 0 10px; letter-spacing: -0.01em; }}
+    .prose h3 {{ font-size: 18px; font-weight: 500; margin: 24px 0 8px; }}
+    .prose p {{ margin: 0 0 12px; max-width: 70ch; }}
+    .prose ul, .prose ol {{ padding-left: 22px; margin: 0 0 12px; }}
+    .prose li {{ margin: 4px 0; }}
+    .prose strong {{ font-weight: 600; }}
+    .prose code {{ font-family: 'Iosevka', 'SF Mono', Menlo, monospace; font-size: 13px; background: var(--soft); padding: 2px 6px; border-radius: 4px; }}
     """
 
     html = f"""<!doctype html>
@@ -225,6 +234,18 @@ def main():
   <h2>Patterns · образцы из guideline</h2>
   <p style="color:var(--muted); max-width: 60ch;">Слайды и шаблоны из Figma-гайдлайна rd4-C. Сгруппированы по типу. Клик по карточке открывает полный PNG.</p>
   {patterns_html}
+</section>
+
+<section id="smm">
+  <h2>SMM — форматы и шаблоны</h2>
+  <p style="color:var(--muted); max-width: 60ch;">Финальные форматы из Figma rd4-C / SMM fin. Афиши, карусели, вакансии, видео, open call, YouTube заглушки.</p>
+  <div class="prose">{smm_md}</div>
+</section>
+
+<section id="icons">
+  <h2>Иконки</h2>
+  <p style="color:var(--muted); max-width: 60ch;">Системный набор Icons + брендовые иконки Unicorn+. Figma rd4-C → страница icons.</p>
+  <div class="prose">{icons_md}</div>
 </section>
 
 <section id="llm">
